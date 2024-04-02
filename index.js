@@ -20,14 +20,24 @@ function numbers(arr1){
 }
 
 //3.array of objects 
-
+let details =[
+    {names:"Faith"},
+    {id:"2381718292"},
+    {salary:[6000,5000,7000]},
+];
+details.sort(function(x,y){
+    return x.salary-(y.salary);
+});
+details.forEach((employee)=> console.log(details.salary));
+console.log(details);
 
 //4.use for each to console each number multiplied by 2
 function multiply(item){
-   item.forEach((y)=>{
-    console.log(y*2);
-   })
+   item.forEach((number)=>{
+    console.log(number*2);
+   });
 }
+multiply([2,3,8,5]);
 
 //5.a function that takes array and consoles the first 4 items multiplied by 8 and the last 2 added by 5
 function multiplyAndAdd(numArr) {
